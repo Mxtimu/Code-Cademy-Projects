@@ -32,13 +32,15 @@ const team = {
 }, 
 
   addGame (newOpponent, newTeamPoints, newOpponentPoints) {
-    let game = {
+    if (typeof newFirstName === 'string' && typeof newLastName === 'string' && typeof newAge === 'number'){
+        let game = {
       opponent: newOpponent,
       teamPoints: newTeamPoints,
       opponentPoints: newOpponentPoints
     }
     this._games.push(game);
   }
+    }
 };
 
 team.addPlayer("Paul", "Pogba", 33);
