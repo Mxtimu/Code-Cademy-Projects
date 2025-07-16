@@ -21,5 +21,6 @@ const updateScore = winner => {
   } 
 }
 
+const advanceRound = () => currentRoundNumber++;
 
 console.log(generateTarget());
