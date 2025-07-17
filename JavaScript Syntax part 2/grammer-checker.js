@@ -31,3 +31,17 @@ let badWordIndex = storyWords.findIndex((word) => {
   return word === badWord
 });
 console.log(badWordIndex);
+
+toryWords[badWordIndex] = 'really';
+let longWordIndex = storyWords.findIndex(word => word.length > 10);
+if (longWordIndex !== -1) {
+  storyWords[longWordIndex] = 'nice';
+}
+
+let lengthCheck = storyWords.every((word) => word.length <= 10);
+
+
+
+console.log(lengthCheck);
+
+console.log(storyWords.join(' '));
