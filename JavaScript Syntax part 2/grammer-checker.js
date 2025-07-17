@@ -20,3 +20,14 @@ storyWords = storyWords.filter((word) => {
     return word
   } 
 });
+
+storyWords = storyWords.map((word) => {
+  if (word === misspelledWord){
+      return 'beautiful'
+  } else {return word}
+});
+
+let badWordIndex = storyWords.findIndex((word) => {
+  return word === badWord
+});
+console.log(badWordIndex);
