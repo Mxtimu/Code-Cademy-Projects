@@ -52,7 +52,7 @@ const findInvalidCards = arrCheck => {
         }
     }
 
-    return invalidCards; // ✅ Return only after checking all cards
+    return invalidCards; 
 };
 
 const invalidCardCompanies = invalidCard => {
